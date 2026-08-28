@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pulse — Personal Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="brand">Pulse<span>.</span></div>
+    <nav class="tabs" id="tabNav">
+      <button class="tab-btn active" data-tab="overview"><span class="dot"></span><span class="label-text">Overview</span></button>
+      <button class="tab-btn" data-tab="projects"><span class="dot"></span><span class="label-text">Projects</span></button>
+      <button class="tab-btn" data-tab="activity"><span class="dot"></span><span class="label-text">Activity</span></button>
+      <button class="tab-btn" data-tab="settings"><span class="dot"></span><span class="label-text">Settings</span></button>
+    </nav>
+    <div class="sidebar-footer">Signed in as N. Kumar</div>
+  </aside>
+
+  <main>
+    <section class="panel active" id="panel-overview">
+      <h1>Overview</h1>
+      <p class="subtitle">A quick snapshot of where things stand today.</p>
+      <div class="card-grid">
+        <div class="stat-card">
+          <div class="label">Active Projects</div>
+          <div class="value accent">4</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Tasks Completed</div>
+          <div class="value">27</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Hours Logged</div>
+          <div class="value">18.5</div>
+        </div>
+      </div>
+      <div class="list-block">
+        <div class="list-row"><span>Weekly report submitted</span><span class="badge done">Done</span></div>
+        <div class="list-row"><span>Client review meeting</span><span class="badge progress">In Progress</span></div>
+        <div class="list-row"><span>Design handoff for v2</span><span class="badge pending">Pending</span></div>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-projects">
+      <h1>Projects</h1>
+      <p class="subtitle">Everything currently in motion.</p>
+      <div class="list-block">
+        <div class="list-row"><span>Memo Care — Dementia Support Platform</span><span class="badge progress">In Progress</span></div>
+        <div class="list-row"><span>Wavelength — Music Streaming Web App</span><span class="badge progress">In Progress</span></div>
+        <div class="list-row"><span>Portfolio Site Redesign</span><span class="badge done">Done</span></div>
+        <div class="list-row"><span>Hackathon Prototype — BLITZ CODERS</span><span class="badge pending">Pending</span></div>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-activity">
+      <h1>Activity</h1>
+      <p class="subtitle">Recent actions across your workspace.</p>
+      <div class="list-block">
+        <div class="list-row"><span>Pushed 3 commits to main</span><span class="badge done">2h ago</span></div>
+        <div class="list-row"><span>Merged pull request #14</span><span class="badge done">Yesterday</span></div>
+        <div class="list-row"><span>Opened issue: fix responsive nav</span><span class="badge pending">2 days ago</span></div>
+        <div class="list-row"><span>Deployed to staging</span><span class="badge done">3 days ago</span></div>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-settings">
+      <h1>Settings</h1>
+      <p class="subtitle">Preferences for this workspace.</p>
+      <div class="list-block" style="padding: 4px 20px;">
+        <div class="settings-row">
+          <div>
+            <div class="label">Email notifications</div>
+            <div class="desc">Get a summary of activity every morning.</div>
+          </div>
+          <button class="toggle on" data-toggle></button>
+        </div>
+        <div class="settings-row">
+          <div>
+            <div class="label">Compact layout</div>
+            <div class="desc">Reduce spacing across all panels.</div>
+          </div>
+          <button class="toggle" data-toggle></button>
+        </div>
+        <div class="settings-row">
+          <div>
+            <div class="label">Auto-save drafts</div>
+            <div class="desc">Save changes as you type, every 30 seconds.</div>
+          </div>
+          <button class="toggle on" data-toggle></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>
